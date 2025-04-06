@@ -1,19 +1,14 @@
 
-import ContactView from './components/ContactView'
-import LandingView from './components/LandingView'
-import LightUp from './components/LightUp'
-import ProjectView from './components/ProjectView'
+
+import { BrowserRouter as Router } from 'react-router-dom'
+import HomePage from './pages/HomePage'
 
 function App() {
 
   return (
-    <>
-     <LandingView />
-     <LightUp />
-     <ProjectView />
-     <ContactView />
-
-    </>
+    <Router>
+      <HomePage />
+    </Router>
   )
 }
 

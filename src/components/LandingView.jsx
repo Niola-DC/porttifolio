@@ -1,6 +1,27 @@
 import React, { useState } from 'react';
+import MarqueeBanner from '../core/MarqueeBannner';
 
 const LandingView = () => {
+    const content = (
+        <>
+          <span className="mx-2">ADVERTISING</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">SOCIAL MEDIA</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">COMMUNICATIONS</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">EXPERIENCE DESIGN</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">DREAMER</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">STRATEGY</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">BRANDING</span>
+          <span className="mx-2">•</span>
+          <span className="mx-2">WEB DESIGN</span>
+          <span className="mx-2">•</span>
+        </>
+      );
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -111,7 +132,7 @@ const LandingView = () => {
                 </div>
             </div>
             {/* Scrolling Banner */}
-            <div className="w-full bg-green-500 text-black py-2 overflow-hidden whitespace-nowrap">
+            {/* <div className="w-full bg-green-500 text-black py-2 overflow-hidden whitespace-nowrap">
                 <div className="animate-marquee inline-block">
                     <span className="mx-2">ADVERTISING</span>
                     <span className="mx-2">•</span>
@@ -134,7 +155,8 @@ const LandingView = () => {
                     <span className="mx-2">SOCIAL MEDIA</span>
                     <span className="mx-2">•</span>
                 </div>
-            </div>
+            </div> */}
+            <MarqueeBanner content={content} />
         </div>
     );
 };

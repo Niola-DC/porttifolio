@@ -64,11 +64,11 @@ const ProjectView = () => {
             </div>
 
             {/* Back to top button */}
-            <div className="fixed bottom-8 right-8 z-10">
+            {/* <div className="fixed bottom-8 right-8 z-10">
                 <button className="bg-black border border-gray-700 rounded-full w-12 h-12 flex items-center justify-center">
                     <span className="text-xl">↑</span>
                 </button>
-            </div>
+            </div> */}
         </div>
     );
 };

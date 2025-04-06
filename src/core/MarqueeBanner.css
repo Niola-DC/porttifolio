@@ -1,0 +1,27 @@
+.marquee-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+  }
+  
+  .marquee-content {
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  /* Seamless scroll from right to left */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

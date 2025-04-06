@@ -6,7 +6,7 @@ const ContactView = () => {
     <div className="min-h-screen bg-black text-white flex flex-col">
       
       {/* Main Content */}
-      <main className="lg:flex-grow container mx-auto px-4 md:px-8 py-16 lg:ml-6">
+      <main className="lg:flex-grow container mx-auto px-4 md:px-8 py-16 lg:pl-14">
         <div className="text-center md:text-left">
           <h1 className="text-8xl md:text-9xl font-bold tracking-tighter lg:mb-8">Say hi!</h1>
           <div className="h-px w-full bg-gray-700 my-8"></div>

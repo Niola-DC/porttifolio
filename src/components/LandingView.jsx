@@ -4,24 +4,24 @@ import MarqueeBanner from '../core/MarqueeBannner';
 const LandingView = () => {
     const content = (
         <>
-          <span className="mx-2">ADVERTISING</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">SOCIAL MEDIA</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">COMMUNICATIONS</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">EXPERIENCE DESIGN</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">DREAMER</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">STRATEGY</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">BRANDING</span>
-          <span className="mx-2">•</span>
-          <span className="mx-2">WEB DESIGN</span>
-          <span className="mx-2">•</span>
+            <span className="mx-2">ADVERTISING</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">SOCIAL MEDIA</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">COMMUNICATIONS</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">EXPERIENCE DESIGN</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">DREAMER</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">STRATEGY</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">BRANDING</span>
+            <span className="mx-2">•</span>
+            <span className="mx-2">WEB DESIGN</span>
+            <span className="mx-2">•</span>
         </>
-      );
+    );
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -72,36 +72,42 @@ const LandingView = () => {
                     </div>
                 </div>
                 {/* Menu icon */}
-            <div className="flex flex-col lg:flex-row min-h-screen">
+                <div className="flex flex-col lg:flex-row min-h-screen">
 
-                <button className="lg:hidden mb-auto ml-4 mt-20" onClick={toggleMenu}>
+                    <button className="lg:hidden mb-auto ml-4 mt-20" onClick={toggleMenu}>
 
-                    {/* <div > */}
-                    <div className="flex flex-col space-y-1.5">
-                        <div className="w-6 h-1 bg-white rounded-full"></div>
-                        <div className="w-6 h-1 bg-white rounded-full"></div>
-                        <div className="w-6 h-1 bg-white rounded-full"></div>
-                    </div>
-                    {/* </div> */}
-                </button>
+                        {/* <div > */}
+                        <div className="flex flex-col space-y-1.5">
+                            <div className="w-6 h-1 bg-white rounded-full"></div>
+                            <div className="w-6 h-1 bg-white rounded-full"></div>
+                            <div className="w-6 h-1 bg-white rounded-full"></div>
+                        </div>
+                        {/* </div> */}
+                    </button>
                 </div>
 
                 {/* Center Content */}
                 <div className="w-full lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden p-4 lg:mt-auto mt-0">
                     <div className="container mx-auto">
                         {/* Main Heading */}
-                        <div className="z-10 text-center lg:text-left mt-20 lg:mt-0 relative">
-                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide leading-tight mb-8">
+                        <div
+                            className="z-10 text-center flex flex-col my-4 sm:my-8 lg:my-10 lg:mx-8 lg:mt-0"
+                            style={{
+                                animation: "slideInRight 1s ease-out",
+                            }}
+                        >
+                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide leading-tight mb-4 sm:mb-6 lg:text-left">
                                 SOFTWARE ENGINEER<br />WEB DEVELOPER
                             </h1>
 
                             {/* Subtext */}
-                            <div className="text-white max-w-md ml-auto lg:ml-0">
+                            <div className="text-white max-w-lg ml-auto lg:ml-0">
                                 <p className="text-gray-300 text-sm md:text-base lg:text-lg">
                                     Software Engineer <span className="text-white font-medium">focused on</span> creating <span className="text-white font-medium">beautiful websites</span> for businesses that want more than just a website—they want an experience.
                                 </p>
                             </div>
                         </div>
+
                     </div>
 
                     {/* Colorful Wavy Border Effect */}

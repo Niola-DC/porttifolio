@@ -34,7 +34,7 @@ const LandingView = () => {
             {/* Main Content */}
             <div className="flex flex-col lg:flex-row min-h-screen">
                 {/* Left side - sidebar & controls */}
-                <div className="bg-black fixed left-0 top-0 bottom-0 w-14 lg:flex md:flex flex-col justify-between z-10 border-r border-gray-800 hidden ">
+                <div className="bg-black fixed left-0 top-0 bottom-0 w-14 lg:flex md:flex flex-col justify-between z-10 border-r border-gray-800 hidden">
                     <div className="flex flex-col items-center">
                         <div className="transform -rotate-90 origin-center mt-18">
                             <span className="text-2xl md:text-3xl font-bold tracking-wider text-white">ENIOLA</span>
@@ -72,22 +72,20 @@ const LandingView = () => {
                     </div>
                 </div>
                 {/* Menu icon */}
-                <div className="flex flex-col lg:flex-row min-h-screen">
+                <div className="flex  lg:hidden">
 
-                    <button className="lg:hidden mb-auto ml-4 mt-20" onClick={toggleMenu}>
+                    <button className="mb-auto ml-4 mt-20" onClick={toggleMenu}>
 
-                        {/* <div > */}
                         <div className="flex flex-col space-y-1.5">
                             <div className="w-6 h-1 bg-white rounded-full"></div>
                             <div className="w-6 h-1 bg-white rounded-full"></div>
                             <div className="w-6 h-1 bg-white rounded-full"></div>
                         </div>
-                        {/* </div> */}
                     </button>
                 </div>
 
                 {/* Center Content */}
-                <div className="w-full lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden p-4 lg:mt-auto mt-0">
+                <div className="w-full lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden p-4 lg:mt-auto mt-18">
                     <div className="container mx-auto">
                         {/* Main Heading */}
                         <div

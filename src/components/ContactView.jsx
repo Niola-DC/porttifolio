@@ -48,7 +48,7 @@ const ContactView = () => {
           </div>
           
           {/* Subscribe Form */}
-          <div className="w-full md:w-auto hidden">
+          <div className="w-full md:w-auto hidden lg:block">
             <form className="flex flex-col space-y-2">
               <input 
                 type="email" 

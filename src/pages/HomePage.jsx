@@ -5,6 +5,8 @@ import ProjectView from '../components/ProjectView';
 import ContactView from '../components/ContactView';
 import { useLocation } from 'react-router-dom';
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'; // Ensure proper import of icons
+import SkillView from '../components/SkillView';
+import SkillsSection from '../components/SkillSection';
 
 const HomePage = () => {
   const bottomRef = useRef(null);
@@ -48,6 +50,8 @@ const HomePage = () => {
       <LandingView />
       <LightUp />
       <ProjectView />
+      {/* <SkillView /> */}
+      <SkillsSection />
       <ContactView />
       {/* <FloatButton /> */}
       {/* <button

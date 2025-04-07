@@ -57,8 +57,8 @@ const LandingView = () => {
                     {/* Enquiries text and phone number */}
                     <div className="transform -rotate-90 origin-left mb-2 ml-2">
                         <div className="flex flex-col text-white space-y-1">
-                            <span className="text-xs uppercase tracking-wider mt-8">Enquiries</span>
-                            <span className="font-extrabold w-40">+234 8024 143 594</span>
+                            <span className="text-xs text-bold uppercase tracking-wider mt-10 text-gray-400">Enquiries</span>
+                            <span className="font-bold w-40">+234 8024 143 594</span>
                         </div>
                     </div>
 

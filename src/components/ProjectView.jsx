@@ -12,10 +12,9 @@ const ProjectView = () => {
                     <section className="min-h-[50vh] flex flex-col md:flex-row justify-center items-start mb-12">
                         <div className="w-full md:w-1/2 mb-8 md:mb-0">
                             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                            VISUALS<br />
-                                THAT TELL<br />
-                                A STORY
-                                
+                            VISUALS THAT<br />
+                                 TELL A GREAT<br />
+                                 STORY
                             </h3>
                         </div>
 

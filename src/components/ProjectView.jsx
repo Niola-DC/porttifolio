@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectView = () => {
     return (
-        <div className="bg-white text-black min-h-screen lg:mx-2">
+        <div className="bg-white text-black min-h-screen lg:mx-2 lg:my-16">
             {/* Main content */}
             <div className="p-6 md:p-12 mx-6">
                 <main>

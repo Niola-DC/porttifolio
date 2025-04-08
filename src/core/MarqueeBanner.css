@@ -14,6 +14,10 @@
     display: flex;
     white-space: nowrap;
   }
+
+  .skill-marquee {
+    animation: skillViewer 5s alternate-reverse;
+  }
   
   /* Seamless scroll from right to left */
   @keyframes scroll-left {
@@ -22,6 +26,15 @@
     }
     100% {
       transform: translateX(-50%);
+    }
+  }
+
+  @keyframes skillViewer {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
     }
   }
   

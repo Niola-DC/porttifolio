@@ -91,7 +91,7 @@ const LandingView = () => {
                             <h1 className="text-white text-3xl sm:text-5xl lg:text-7xl font-bold  tracking-wide leading-tight mb-4">
                                 SOFTWARE ENGINEER<br />WEB DEVELOPER
                             </h1>
-                            <p className="text-gray-300 text-sm sm:text-base lg:text-lg mt-2 max-w-lg ml-auto text-left">
+                            <p className="text-gray-300 text-sm sm:text-base lg:text-lg mt-2 max-w-lg ml-auto text-center lg:text-left">
                                 Software Engineer <span className="text-white font-medium">focused on</span> creating <span className="text-white font-medium">beautiful websites</span> for businesses that want more than just a website—they want an experience.
                             </p>
                         </div>

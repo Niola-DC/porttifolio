@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Instagram, Linkedin, Twitter, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ContactView = () => {
   return (
@@ -33,18 +34,18 @@ const ContactView = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mx-10">
           {/* Social Icons */}
           <div className="flex space-x-4 mb-6 md:mb-0">
-            <a href="#" className="text-white hover:text-gray-300" aria-label="Instagram">
+            <Link to="https://www.instagram.com/callme.ennie/" className="text-white hover:text-gray-300" aria-label="Instagram">
               <Instagram size={28} />
-            </a>
-            <a href="#" className="text-white hover:text-gray-300" aria-label="LinkedIn">
+            </Link>
+            <Link to="https://www.linkedin.com/in/eniola-c-fanegan-a50996234/" className="text-white hover:text-gray-300" aria-label="LinkedIn">
               <Linkedin size={28} />
-            </a>
-            <a href='#' className="text-white hover:text-gray-300" aria-label="GitHub">
+            </Link>
+            <Link to='https://github.com/Niola-DC' className="text-white hover:text-gray-300" aria-label="GitHub">
                 <Github size={28} />
-            </a>
-            <a href='#' className="text-white hover:text-gray-300" aria-label="X">
+            </Link>
+            <Link to='https://x.com/eniola_merem' className="text-white hover:text-gray-300" aria-label="X">
                 <Twitter size={28} />
-            </a>
+            </Link>
           </div>
           
           {/* Subscribe Form */}

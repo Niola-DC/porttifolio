@@ -85,21 +85,21 @@ const LandingView = () => {
                 </div>
 
                 {/* Center Content */}
-                <div className="w-full lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden p-4 lg:mt-auto mt-18">
+                <div className="w-full lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden p-4 lg:mt-auto mt-4">
                     <div className="container mx-auto">
                         {/* Main Heading */}
                         <div
-                            className="z-10 text-center flex flex-col my-4 sm:my-8 lg:my-10 lg:mx-8 lg:mt-0"
+                            className=" z-10 flex flex-col my-4 sm:my-8 lg:my-10 lg:mx-0 lg:mt-0 text-center"
                             style={{
-                                animation: "slideInRight 1s ease-out",
+                                animation: "slideInRight 2s ease-out",
                             }}
                         >
-                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide leading-tight mb-4 sm:mb-6 lg:text-left">
+                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide leading-tight mb-4 sm:mb-6 text-center">
                                 SOFTWARE ENGINEER<br />WEB DEVELOPER
                             </h1>
 
                             {/* Subtext */}
-                            <div className="text-white max-w-lg ml-auto lg:ml-0">
+                            <div className="text-white max-w-lg ml-auto ">
                                 <p className="text-gray-300 text-sm md:text-base lg:text-lg">
                                     Software Engineer <span className="text-white font-medium">focused on</span> creating <span className="text-white font-medium">beautiful websites</span> for businesses that want more than just a website—they want an experience.
                                 </p>

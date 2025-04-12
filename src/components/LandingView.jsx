@@ -71,7 +71,7 @@ const LandingView = () => {
                     </div>
                 </div>
                 {/* Menu icon */}
-                <div className="lg:hidden flex justify-start px-4 py-4">
+                <div className="lg:hidden flex justify-start px-4 py-8">
                     <button onClick={toggleMenu} className="flex flex-col space-y-1.5">
                         <div className="w-6 h-1 bg-white rounded-full"></div>
                         <div className="w-6 h-1 bg-white rounded-full"></div>

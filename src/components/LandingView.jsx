@@ -81,7 +81,7 @@ const LandingView = () => {
 
 
                 {/* Center Content */}
-                <div className="w-full ml-0 lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden lg:mt-auto mt-18 mx-4">
+                <div className="w-full ml-0 lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden lg:mt-auto my-20 mx-4">
                     <div className="w-full flex-grow flex items-center justify-center px-4 py-8 lg:mt-30 lg:ml-16">
                         <div className="z-10 flex flex-col my-4 sm:my-8 lg:my-10 lg:mx-0 lg:mt-0 text-center"
                             style={{

@@ -29,10 +29,9 @@ const LandingView = () => {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <div className="relative min-h-screen bg-black overflow-hidden">
+        <div className="relative min-h-fit lg:min-h-full bg-black overflow-hidden">
+            <div className="flex flex-col lg:flex-row h-full">
 
-            {/* Main Content */}
-            <div className="flex flex-col lg:flex-row min-h-screen">
                 {/* Left side - sidebar & controls */}
                 <div className="bg-black fixed left-0 top-0 bottom-0 w-14 lg:flex md:flex flex-col justify-between z-10 border-r border-gray-800 hidden">
                     <div className="flex flex-col items-center">
@@ -72,44 +71,35 @@ const LandingView = () => {
                     </div>
                 </div>
                 {/* Menu icon */}
-                <div className="flex  lg:hidden">
-
-                    <button className="mb-auto ml-4 mt-20" onClick={toggleMenu}>
-
-                        <div className="flex flex-col space-y-1.5">
-                            <div className="w-6 h-1 bg-white rounded-full"></div>
-                            <div className="w-6 h-1 bg-white rounded-full"></div>
-                            <div className="w-6 h-1 bg-white rounded-full"></div>
-                        </div>
+                <div className="lg:hidden flex justify-start px-4 py-4">
+                    <button onClick={toggleMenu} className="flex flex-col space-y-1.5">
+                        <div className="w-6 h-1 bg-white rounded-full"></div>
+                        <div className="w-6 h-1 bg-white rounded-full"></div>
+                        <div className="w-6 h-1 bg-white rounded-full"></div>
                     </button>
                 </div>
 
+
                 {/* Center Content */}
-                <div className="w-full lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden p-4 lg:mt-auto mt-4">
-                    <div className="container mx-auto">
-                        {/* Main Heading */}
-                        <div
-                            className=" z-10 flex flex-col my-4 sm:my-8 lg:my-10 lg:mx-0 lg:mt-0 text-center"
+                <div className="w-full ml-0 lg:w-3/4 lg:ml-16 flex items-center justify-center relative overflow-hidden lg:mt-auto mt-18 mx-4">
+                    <div className="w-full flex-grow flex items-center justify-center px-4 py-8 lg:mt-30 lg:ml-16">
+                        <div className="z-10 flex flex-col my-4 sm:my-8 lg:my-10 lg:mx-0 lg:mt-0 text-center"
                             style={{
                                 animation: "slideInRight 2s ease-out",
                             }}
                         >
-                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide leading-tight mb-4 sm:mb-6 text-center">
+                            <h1 className="text-white text-3xl sm:text-5xl lg:text-7xl font-bold  tracking-wide leading-tight mb-4">
                                 SOFTWARE ENGINEER<br />WEB DEVELOPER
                             </h1>
-
-                            {/* Subtext */}
-                            <div className="text-white max-w-lg ml-auto ">
-                                <p className="text-gray-300 text-sm md:text-base lg:text-lg">
-                                    Software Engineer <span className="text-white font-medium">focused on</span> creating <span className="text-white font-medium">beautiful websites</span> for businesses that want more than just a website—they want an experience.
-                                </p>
-                            </div>
+                            <p className="text-gray-300 text-sm sm:text-base lg:text-lg mt-2 max-w-lg ml-auto">
+                                Software Engineer <span className="text-white font-medium">focused on</span> creating <span className="text-white font-medium">beautiful websites</span> for businesses that want more than just a website—they want an experience.
+                            </p>
                         </div>
-
                     </div>
 
+
                     {/* Colorful Wavy Border Effect */}
-                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-full h-full">
+                    <div className="absolute bg-center lg:right-0 top-1/2 transform -translate-y-1/2 w-full h-full">
                         <div className="absolute right-0 top-0 w-3/4 h-full overflow-hidden">
                             <div className="absolute inset-0 blur-xl">
                                 <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
@@ -160,7 +150,10 @@ const LandingView = () => {
                     <span className="mx-2">•</span>
                 </div>
             </div> */}
-            <MarqueeBanner content={content} />
+            <div className="mt-6">
+                <MarqueeBanner content={content} />
+            </div>
+
         </div>
     );
 };

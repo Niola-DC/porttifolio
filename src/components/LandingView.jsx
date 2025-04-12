@@ -150,7 +150,7 @@ const LandingView = () => {
                     <span className="mx-2">•</span>
                 </div>
             </div> */}
-            <div className="mt-6">
+            <div className="mt-4 mb-6">
                 <MarqueeBanner content={content} />
             </div>
 

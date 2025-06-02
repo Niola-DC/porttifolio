@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LightUp = () => {
     return (
         <div className="bg-black text-white min-h-screen">
@@ -14,9 +16,11 @@ const LightUp = () => {
                     </div>
                     <div className="w-full">
                         <div class="flex p-4 space-x-18 items-center justify-self-center mt-12 mb:10">
+                            <Link to='projects'>
                             <button class="border w-35 text-white px-3 py-2.5 text-sm rounded-full hover:bg-green-500 transition duration-300">
                                 See My Works
                             </button>
+                            </Link>
                             <button class="border w-35 text-white px-3 py-2.5 text-sm rounded-full hover:bg-green-500 transition duration-300">
                                 Learn More
                             </button>

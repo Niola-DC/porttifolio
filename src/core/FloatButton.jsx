@@ -44,7 +44,7 @@ const FloatButton = () => {
       </button>
 
       <div ref={bottomRef} className="mt-10"></div>
-      <div></div>
+      {/* <div></div> */}
    </div>
  )
 }
